@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: AI-Spend-Analyzer
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true # 웹 브라우저에서 DB를 볼 수 있게 함
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+server:
+  port: 8080
