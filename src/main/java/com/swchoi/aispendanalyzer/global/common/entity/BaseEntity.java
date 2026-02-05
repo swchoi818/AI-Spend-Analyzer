@@ -1,4 +1,4 @@
-package com.swchoi.aispendanalyzer.global.common;
+package com.swchoi.aispendanalyzer.global.common.entity;
 
 import java.time.LocalDateTime;
 import org.springframework.data.annotation.CreatedDate;

@@ -2,7 +2,7 @@ package com.swchoi.aispendanalyzer.domain.asset.entity;
 
 import com.swchoi.aispendanalyzer.domain.member.entity.Member;
 import com.swchoi.aispendanalyzer.domain.spending.entity.Spending;
-import com.swchoi.aispendanalyzer.global.common.BaseEntity;
+import com.swchoi.aispendanalyzer.global.common.entity.BaseEntity;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;

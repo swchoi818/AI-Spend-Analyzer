@@ -1,6 +1,6 @@
 package com.swchoi.aispendanalyzer.domain.member.entity;
 
-import com.swchoi.aispendanalyzer.global.common.BaseEntity;
+import com.swchoi.aispendanalyzer.global.common.entity.BaseEntity;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;

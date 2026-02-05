@@ -15,3 +15,9 @@ spring:
     show-sql: true
 server:
   port: 8080
+
+codef:
+  client-id: ${CODEF_CLIENT_ID}
+  client-secret: ${CODEF_CLIENT_SECRET}
+  public-key: ${CODEF_PUBLIC_KEY}
+  api-url: https://development.codef.io/v1

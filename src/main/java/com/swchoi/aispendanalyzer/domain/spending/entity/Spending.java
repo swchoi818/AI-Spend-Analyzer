@@ -1,7 +1,7 @@
 package com.swchoi.aispendanalyzer.domain.spending.entity;
 
-import com.swchoi.aispendanalyzer.domain.member.entity.Member;
-import com.swchoi.aispendanalyzer.global.common.BaseEntity;
+import com.swchoi.aispendanalyzer.domain.asset.entity.Asset;
+import com.swchoi.aispendanalyzer.global.common.entity.BaseEntity;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -24,7 +24,7 @@ public class Spending extends BaseEntity { // 상속 추가
 
     private String content; // 가맹점명 (예: 스타벅스)
 
-    @ManyToOne(fetch = FetchType.LAZY) // 지연 로딩 권장
-    @JoinColumn(name = "member_id")
-    private Member member; // "누가" 썼는지 연결
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "asset_id")
+    private Asset asset;
 }
