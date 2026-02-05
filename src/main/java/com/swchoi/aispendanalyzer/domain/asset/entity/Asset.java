@@ -24,6 +24,9 @@ public class Asset extends BaseEntity {
     @Column(nullable = false)
     private String name; // 자산 별칭 (예: 월급 통장, 생활비 카드)
 
+    @Column(nullable = false, unique = true) // 중복 저장을 막기 위해 unique 설정 권장
+    private String accountNo;
+
     @Enumerated(EnumType.STRING) // Enum 이름을 문자열로 DB에 저장
     @Column(nullable = false)
     private AssetType assetType;
@@ -39,8 +42,9 @@ public class Asset extends BaseEntity {
     private List<Spending> spendings = new ArrayList<>();
 
     @Builder
-    public Asset(String name, AssetType assetType, Long balance, Member member) {
+    public Asset(String name, String accountNo, AssetType assetType, Long balance, Member member) {
         this.name = name;
+        this.accountNo = accountNo;
         this.assetType = assetType;
         this.balance = balance;
         this.member = member;
